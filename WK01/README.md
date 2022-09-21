@@ -10,7 +10,9 @@ design.sv    - Has the design module
 testbench.sv - Has the TB module
 ```
 
-- Result checking is done by triggering an event (check_result_event)
+- Stimulus is generated using a for loop
+- Stimulus is driven on every negitive clock edge 
+- Result checking is done on every positive clock by triggering an event (check_result_event)
 - The event runs a task (check_result) 
 - The task computes expected binary output using a function (binary_expected) 
 - The comparission is made after 2ns after the positive clock, so that right value of output binary number from design (bin_out_tb) is read
