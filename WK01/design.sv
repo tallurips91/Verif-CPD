@@ -14,7 +14,7 @@ module gray2bin (
           bin_out[3] <= gray_in[3];
           bin_out[2] <= gray_in[3] ^ gray_in[2];
           bin_out[1] <= gray_in[3] ^ gray_in[2] ^ gray_in[1];
-          bin_out[0] <= gray_in[3] ^ gray_in[2] ^ gray_in[1] ^ gray_in[0]; 
+          bin_out[0] <= gray_in[3] ^ gray_in[3] ^ gray_in[1] ^ gray_in[0]; 
         end
     end
   
